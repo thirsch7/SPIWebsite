@@ -93,3 +93,4 @@ app.post('/chapterform', function(req, res){
 	res.redirect('response.html');
 	res.end('');
 });
+module.exports = app;
