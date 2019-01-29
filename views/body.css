@@ -1,0 +1,51 @@
+body{
+	background-color: black;
+	color: hsl(204,11%,25%);
+}
+hr{
+	border-color: hsl(204,11%,25%);
+	margin-top: 50px;
+	transition: border-color 0.5s ease;
+	padding: 15px 0px 15px 0px;
+}
+hr:hover{
+	border-color: hsl(204, 55%, 53%);
+}
+.brightbluehover{
+	transition: color 0.5s ease;
+}
+.brightbluehover:hover{
+	color: hsl(204, 55%, 53%);
+}
+.sectionbluehover{
+	padding: 2%;
+	transition: all 0.5s ease;
+}
+.sectionbluehover:hover{
+	color: hsl(204,11%,75%);
+	background-color: hsl(0, 0%, 10%);
+	text-decoration: none;
+}
+.descriptionLink{
+	color: hsl(204, 40%, 60%);
+	transition: color 0.25s ease;
+}
+.descriptionLink:hover{
+	color: hsl(204, 55%, 40%);
+	text-decoration: none;
+}
+.description{
+	border-radius: 7px;
+	color: hsl(204,11%,25%);
+}
+.pad{
+	padding: 2%;
+}
+.pageTitle{
+	font-size: 5vw;
+	text-align: center;
+	margin: 80px 0px 80px 0px;
+}
+.leftMost{
+	margin-left: 16.666667%;
+}

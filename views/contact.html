@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contact</title>
+		<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS' crossorigin='anonymous'>
+		<link rel='stylesheet' type='text/css' href='navbar.css'>
+		<link rel='stylesheet' type='text/css' href='footer.css'>
+		<link rel='stylesheet' type='text/css' href='body.css'>
+		<link rel='stylesheet' type='text/css' href='contact.css'>
+	</head>
+	<body>
+		<div class='row' id='mynav'>
+			<div class='col-md-3 mynav nav' id='logo'><a href='index.html' class='mx-auto'><img src='SPILogo.png' width=247 height=60 id='spilogo'></a></div>
+			<div class='col-md-3 mynav nav' id='about'><a href='about.html' class='mx-auto navlink'>About the Club</a></div>
+			<div class='col-md-3 mynav nav' id='projects'>
+				<div id='dropWrap' class='mx-auto navlink'>
+					<div id='fixedDropWrap'>
+						<a href='projects.html' id='projLink' class='mx-auto'>Projects</a>
+						<div id='projDrop'>
+							<a href='projects/rankedchoicevoting.html' class='dropLink'>Ranked-choice Voting</a>
+							<a href='projects/opportunityblock.html' class='dropLink'>Opportunity Block</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='col-md-3 mynav nav' id='contact'><a href='contact.html' class='mx-auto navlink'>Contact</a></div>
+		</div>
+		
+		<h1 class='pageTitle brightbluehover'>Contact SPI</h1>
+		
+		<div class='row'>
+			<div class='col-8 offset-2'>
+				<p id='instructions' class='sectionbluehover'>If you have want to join the club, create a new chapter or suggest a project, fill out one of the forms below.
+				Otherwise, the club can be reached at <a href='mailto:studentpolicyinitiative@gmail.com' class='descriptionLink'>studentpolicyinitiative@gmail.com</a>.</p>
+			</div>
+		</div>
+		
+		<hr style='margin-top: 20px; margin-bottom: 50px;'>
+		
+		<div class='row'>
+			<div class='col-lg-4 twoColumn leftMost pad' id='leftForms' style='border-right: 1px solid hsl(204,11%,50%)'>
+				<h4 class='brightbluehover'>Join the club</h4>
+				<p class='description sectionbluehover'>The Student Policy Initiative meets in room 221 every Monday after school and during the opportunity block on day H.</p>
+				<form method='post' action='/signupform'>
+					Name<br>
+					<input type='text' name='name'><br><br>
+					Email<br>
+					<input type='email' name='email' required><br><br>
+					If you have any comments or projects you are espeically interested in, leave them here.<br>
+					<textarea name='comments'></textarea><br>
+					<input type='submit' value='Sign Up'>
+				</form>
+				<hr>
+				<h4 class='brightbluehover'>Suggest a project</h4>
+				<form id='project' method='post' action='/projectform'>
+					Name<br>
+					<input type='text' name='name'><br><br>
+					Email<br>
+					<input type='email' name='email'><br><br>
+					Are you currently a member of SPI?<br>
+					<input type='radio' name='member' value='yes' required>Yes<br>
+					<input type='radio' name='member' value='no' required>No<br><br>
+					What is the topic of the project?<br>
+					<input type='text' name='topic'><br><br>
+					What is your stance on the project and why?<br>
+					<textarea name='comments'></textarea><br>
+					<input type='submit' value='Submit Project'>
+				</form>
+			</div>
+			<div class='col-lg-4 twoColumn pad' style='margin-top: 0px'>
+				<h4 class='brightbluehover'>Start a chapter</h4>
+				<p class='description sectionbluehover'>Are you a high school or college student interested in bringing the Student Policy Initiative to your school?
+				Leave your information below and the club will reach out to you.</p>
+				<form method='post' action='/chapterform'>
+					Name<br>
+					<input type='text' name='name' required><br><br>
+					Email<br>
+					<input type='email' name='email' required><br><br>
+					Phone number<br>
+					<input type='text' name='phone' required><br><br>
+					Name of school<br>
+					<input type='text' name='school' required><br><br>
+					If there are any projects you think your chapter is likely to pursue or if you have any other comments, leave them here.<br>
+					<textarea name='comments'></textarea><br>
+					<input type='submit' value='Create Chapter'>
+				</form>
+			</div>
+		</div>
+		
+		<div class='row text-center' id='footer'>
+			<div class='col-6'><div class='mx-auto footWrap'>
+				<a href='index.html' class='footer'>Home</a><br>
+				<a href='about.html' class='footer'>About</a><br>
+				<a href='contact.html' class='footer'>Contact</a>
+			</div></div>
+			<div class='col-6'><div class='mx-auto footWrap'>
+				<a href='projects.html' class='footer'>Projects</a><br>
+				<a href='projects/opportunityblock.html' class='footer'>Opportunity Block</a><br>
+				<a href='projects/rankedchoicevoting.html' class='footer'>Ranked-choice Voting</a>
+			</div></div>
+		</div>
+	</body>
+	<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' integrity='sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut' crossorigin='anonymous'></script>
+	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' integrity='sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k' crossorigin='anonymous'></script>
+	<script src='navbar.js'></script>
+	<script src='twocolumnresize.js'></script>
+	<script src='contact.js'></script>
+</html>

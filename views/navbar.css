@@ -1,0 +1,58 @@
+.dropLink{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 0px 2px 10px 2px;
+}
+.dropLink:hover{
+	text-decoration: none;
+	color: gainsboro;
+}
+#dropWrap{
+	position: relative;
+	width: 83.6px;
+	height: 80px;
+}
+#fixedDropWrap{
+	position: absolute;
+	width: 200px;
+	height: 114px;
+	left: -58.2px; /*This is calculated by doing ([width of fixedDropWrap] - [width of projLink]) / 2 */
+	text-align: center;
+}
+#mynav{
+	background-color: rgba(100, 100, 100, 0.3);
+}
+#mynav>.col-md-4{
+	height: 80px;
+}
+.navlink{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	padding-top: 30px;
+	padding-bottom: 23.6px;
+}
+.mynav>a:hover{
+	color: gainsboro;
+	text-decoration: none;
+}
+#projDrop{
+	top: 30px;
+	position: absolute;
+	display: none;
+	background-color: rgb(50, 50, 50);
+	height: 60px;
+	z-index: 100;
+}
+#projLink{
+	padding: 0px;
+	color: white;
+}
+#projLink:hover{
+	color: gainsboro;
+	text-decoration: none;
+}
+#spilogo{
+	margin-top: 10px;
+}
