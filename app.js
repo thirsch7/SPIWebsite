@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname + '/views')));
 
 app.use(express.urlencoded());
 
-server.listen(80);
+server.listen(8000);
 
 app.get('/opportunityblock', function(req, res){
 	res.render('projects/opportunityblock.html');
